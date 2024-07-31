@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="feedback.css" />
+    <link rel="stylesheet" href="front.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Feedback</title>
+  </head>
+  <body>
+    <%- include("./common/navbar.ejs", { username: username }) %>
+
+    <main>
+      <section>
+        <p class="feedback-title">Give Us Feedback!</p>
+        <form action="/feedback" method="post">
+          <input
+            type="text"
+            name="feedback"
+            placeholder="Your Feedback"
+            required
+          />
+
+          <input
+            type="text"
+            name="engineerName"
+            placeholder="Name of Engineer"
+            required
+          />
+          <input
+            type="text"
+            name="engineerRating"
+            placeholder="Rating"
+            required
+          />
+
+          <button type="submit" class="but">Submit Feedback</button>
+        </form>
+      </section>
+
+      <section>
+        <div class="row-cols-1-row-cols-md-3 deck">
+          <% feedbacks.forEach((feedback) => { %>
+          <div class="col-mb-4">
+            <div class="card h-100">
+              <img src="user.png" class="card-img-top" alt="raju" />
+              <div class="card-body">
+                <h5 class="card-title"><%= feedback.username %></h5>
+                <p class="card-text"><%= feedback.description %></p>
+              </div>
+            </div>
+          </div>
+          <% }) %>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

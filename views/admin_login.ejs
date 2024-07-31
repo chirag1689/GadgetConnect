@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    
+    <style>
+
+        body{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            background-color: black;
+        }
+        form{
+            color: white;
+            padding: 60px;
+        }
+        .line1{
+            position: relative;
+            width: 80px;
+            height: 30px;
+            right: 70px;
+            top:60px;
+            opacity: 90%;
+            filter: invert(100%);
+        }
+        .line2{
+            position: relative;
+            width: 80px;
+            height: 30px;
+            left: 70px;
+            top:60px;
+            opacity: 90%;
+            filter: invert(100%);
+        }
+        .lab{
+            position: relative;
+            right: 108px;
+            bottom: 7px;
+        }
+        .in{
+            border: none;
+            border-radius: 10px;
+            width: 20rem;
+            height: 2rem;
+            font-size: 1.25rem;
+             font-family: 'Jaldi', sans-serif;
+;
+        }
+        button{
+            display: inline-block;
+            cursor: pointer;
+            font-size: 14px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            border-radius: 15px;
+            padding: 5px 10px;
+            color: #ffffff;
+            border: none;
+            
+        }
+        .submit{
+            color: rgb(46, 84, 154);
+            box-shadow: 0 0 0 1px rgb(46, 84, 154);
+            transition: 0.2s;
+            background-color: #ffffff;
+        }
+        .submit:hover{
+            color: #ffffff;
+            box-shadow: 0 0 0 1px rgb(255, 255, 255);
+            background-color: rgb(46, 84, 154);
+        }
+
+        .admin_but{
+            color: rgb(46, 84, 154);
+            box-shadow: 0 0 0 1px rgb(46, 84, 154);
+            transition: 0.2s;
+            background-color: #ffffff;
+            position: relative;
+            bottom: 50px;
+        }
+        .admin_but:hover{
+            color: #ffffff;
+            box-shadow: 0 0 0 1px rgb(255, 255, 255);
+            background-color: rgb(46, 84, 154);
+        }
+        .undl{
+            color: #ffffff;
+            text-decoration:none;
+        }
+        .bgm{
+            position: absolute;
+            z-index: -1;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            left: 0;
+            top: 0;
+            filter: blur(7px) brightness(40%);
+        }
+
+        .main-cont
+        {
+            background-color: #ffffff30;
+            width: fit-content;
+            margin: auto;
+            padding: 0 5rem;
+            box-shadow: 0 0 25px #ffffff;
+            border: 1px solid white;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login page</title>
+</head>
+<body>
+    <img class="bgm" src="https://i.ibb.co/1d36pMS/bgmadh.png" alt="">
+    <form>
+        <img src="https://i.ibb.co/rvxNg5k/line.png" alt="" class="line1">
+        <img src="https://i.ibb.co/rvxNg5k/line.png" alt="" class="line2">
+       <div class="main-cont">
+        <h1>LOGIN</h1>
+        <br><br>
+        <div>
+            <label for="admin" style="position: relative;right: 115px; bottom: 7px;">ADMIN ID</label>
+            <br>
+            <input class="in" type="text" id="username" name="username" required>
+        </div>
+        <br><br>
+        <div>
+            <label for="pass" class="lab">PASSWORD</label>
+            <br>
+            <input  class="in" type="password" id="pass" name="pass" required>
+        </div>
+        <br>
+        <br>
+        <div>
+            <button type="submit" class="submit">SUBMIT</button>
+        </div>
+        <br>
+        
+    </form>
+    <a href="/login"><button class="admin_but">GO BACK</button></a>
+       </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="top_engineers.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jaldi&display=swap" rel="stylesheet">
+    <title>GadgetConnect</title>
+</head>
+<body>
+    <%- include("./common/navbar.ejs", { username: username }) %>
+<div class="wholebox">
+    
+<div class="container">
+    <div class="box">
+    <h2 class="text">TOP ENGINEERS</h2>
+    <img class="img1" src="user.png" alt="Santosh">
+    <h3 class="imgwriting"><%= ratings[0].name %></h3>
+    <h2 class="rating"><%= ratings[0].rating %>/10</h2>
+    <!-- <img id="tele" class="chat" onclick="box1(this);" src="telegram.png" alt="logo"> -->
+</div>
+
+<div class="sidebox">
+    <div class="Chirag">
+        <img class="chirag" src="user.png" alt="Santosh">
+        <h2 class="text3"><%= ratings[1].name %></h2>
+        </div>
+    <div class="rating2"><%= ratings[1].rating %>/10</div>
+    <div class="Chirag">
+        <img class="chirag" src="user.png" alt="Santosh">
+        <h2 class="text3"><%= ratings[2].name %></h2>
+        </div>
+    <div class="rating2"><%= ratings[2].rating %>/10</div>
+    <div class="Chirag">
+        <img class="chirag" src="user.png" alt="Santosh">
+        <h2 class="text3"><%= ratings[3].name %></h2>
+        </div>
+    <div class="rating2"><%= ratings[3].rating %>/10</div>
+</div>
+</body>

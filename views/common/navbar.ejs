@@ -1,0 +1,21 @@
+<div>
+  <nav>
+    <div class="top">
+      <img class="logo1" src="computer.png" alt="Logo" />
+      <a class="logo" href="#">GadgetConnect</a>
+    </div>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About Us</a></li>
+      <li><a href="/servicing">Servicing</a></li>
+      <li><a href="/engineers" class="Top">Top Engineers</a></li>
+      <li><a href="/feedback">Testimonals</a></li>
+
+      <% if(username === undefined) { %>
+      <li><a href="/login" class="Contact">Login/Register</a></li>
+      <% } else { %>
+      <li><a href="#" class="Top"><%= username %></a></li>
+      <% } %>
+    </ul>
+  </nav>
+</div>

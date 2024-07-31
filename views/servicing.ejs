@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="service.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jaldi&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>GadgetConnect</title>
+  </head>
+  <body>
+    <%- include("./common/navbar.ejs", { username: username }) %>
+    <section id="issue">
+      <div class="issue-left-part">
+        <div>
+          <img class="issue-img" src="/computerpng.png" alt="" />
+        </div>
+        <form class="service-form" action="/servicing" method="post">
+          <input
+            placeholder="Enter your issue"
+            name="description"
+            class="issue-desc"
+            type="text"
+          />
+
+          <button type="submit">Request Service</button>
+        </form>
+      </div>
+      <div class="issue-right-part">
+        <h4 class="issue-right-part-title">Issues We Resolve</h4>
+
+        <div class="issue-card">
+          <p class="issue-text">Monitor</p>
+          <img class="issue-icon" src="/issue-monitor.png" alt="" />
+        </div>
+        <div class="issue-card">
+          <p class="issue-text">GPU</p>
+          <img class="issue-icon" src="/issue-monitor.png" alt="" />
+        </div>
+        <div class="issue-card">
+          <p class="issue-text">CPU</p>
+          <img class="issue-icon" src="/issue-monitor.png" alt="" />
+        </div>
+        <div class="issue-card">
+          <p class="issue-text">Ram</p>
+          <img class="issue-icon" src="/issue-monitor.png" alt="" />
+        </div>
+        <div class="issue-card">
+          <p class="issue-text">Os</p>
+          <img class="issue-icon" src="/issue-monitor.png" alt="" />
+        </div>
+
+        <% if(engineer != "NONE") { %>
+        <h4 class="alloted"><%= engineer.engineer %> has been alloted</h4>
+        <% } %>
+      </div>
+    </section>
+  </body>
+</html>

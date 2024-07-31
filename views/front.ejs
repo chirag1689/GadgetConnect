@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="front.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jaldi&display=swap"
+      rel="stylesheet"
+    />
+    <title>GadgetConnect</title>
+  </head>
+  <body>
+    <%- include("./common/navbar.ejs", { username: username }) %>
+
+    <div class="webintro">
+      <div class="head">
+        <h1 class="writing">GadgetConnect</h1>
+        <span class="subtitle"
+          >At your home, at your office. We come to you</span
+        >
+        <button class="but" type="button">
+          <a href="/login">Book Now </a>
+        </button>
+      </div>
+      <img class="repair" src="repair.png" alt="Repair" />
+    </div>
+
+    <h2 class="choose">Why Choose Us?</h2>
+    <div class="firstpart">
+      <img class="service" src="service.png" alt="service" />
+      <div class="firsttwo">
+        <h3>
+          <span class="text">Expert Technicians:</span> Our certified
+          technicians bring years of experience and expertise to every repair
+          job, ensuring that your computer is in capable
+        </h3>
+        <h3>
+          <span class="text">Comprehensive Services:</span> From hardware
+          repairs and software troubleshooting to virus removal and data
+          recovery, we offer a wide range a services to address all your
+          computer-related issues.
+        </h3>
+      </div>
+    </div>
+    <div class="secondpart">
+      <div class="lasttwo">
+        <h3>
+          <span class="text">Quick Turnaround:</span> We know the importance of
+          a fast and efficient service. Our team is committed to providing
+          timely solutions, getting you back to work or play soon as possible.
+        </h3>
+        <h3>
+          <span class="text">Customer Satisfaction:</span>Our priority is your
+          satisfaction. Read what our happy customers have to say about their
+          experiences with [Your Business Name] on our testimonals page
+        </h3>
+      </div>
+      <button class="button2" type="button">
+        <a href="/login">Book an Appointment</a>
+      </button>
+    </div>
+
+    <h2 class="choose2">How we work</h2>
+    <div class="mainhow">
+      <div class="howpart">
+        <h3>
+          At GadgetConnect, we understand the frustation and inconvenience that
+          computer issue can cause. Whether you're business professional, a
+          student, or a tech-savvy individual, our team of experienced
+          technicians is here to provide reliable and efficient computer repair
+          service tailored to meet your needs
+        </h3>
+      </div>
+      <img class="service2" src="repair3.png" alt="repair3" />
+    </div>
+    <div class="howpart2">
+      <img class="repair4" src="repair4.png" alt="repair" />
+      <div class="text2">
+        <h3>
+          Not sure what's wrong with your computer? Take advantage of our free
+          diagnostic evaluation! Our technicians will assess the issue and
+          provide you with an estimate before any repair begin.
+        </h3>
+      </div>
+    </div>
+
+    <p class="service-title">Our Services</p>
+    <section id="Service">
+      <marquee scrollamount="15" behavior="fast" direction="">
+        <div class="service-cards">
+          <div class="card1">
+            <img class="card-img" src="/computer.png" alt="" />
+            <p class="card-title">Monitor</p>
+          </div>
+          <div class="card1">
+            <img class="card-img" src="/gpu-mining.png" alt="" />
+            <p class="card-title">GPU</p>
+          </div>
+          <div class="card1">
+            <img class="card-img" src="/cpu.png" alt="" />
+            <p class="card-title">CPU</p>
+          </div>
+          <div class="card1">
+            <img class="card-img" src="/operating-system.png" alt="" />
+            <p class="card-title">OS</p>
+          </div>
+          <div class="card1">
+            <img class="card-img" src="/ram-memory.png" alt="" />
+            <p class="card-title">RAM</p>
+          </div>
+          
+        </div>
+      </marquee>
+    </section>
+
+    <section id="footer">
+      <div class="left-part">
+        <img src="/computer.png" alt="" class="logo1">
+        <p class="logo">GadgetConnect</p>
+      </div>
+
+
+     <div class="right-part">
+      <p class="follow-text">Follow us on </p>
+      <div class="socials-cont">
+        <img class="social-img" src="/instagram.png" alt="">
+        <img class="social-img" src="/facebook.png" alt="">
+        <img class="social-img" src="/twitter.png" alt="">
+      </div>
+     </div>
+    </section>
+  </body>
+</html>
