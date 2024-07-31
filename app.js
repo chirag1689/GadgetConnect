@@ -137,4 +137,4 @@ app.post("/feedback", async (req, res) => {
   res.redirect("/feedback");
 });
 
-app.listen(7070, () => console.log("ACTIVE"));
+app.listen(process.env.PORT || 7070, () => console.log("ACTIVE"));
